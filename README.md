@@ -1,12 +1,12 @@
 # Data visualizator
 
-Application for the visualization of simple graphs
+Small application for the visualization of data generating simple graphs. All of this with the objective of learning and applying multiple C++ concepts.
 
 ## Build
 
 Build the project using the scripts inside the `scripts/`:
 
-```sh
+```console
 # Build the project
 ./scripts/build.sh
 
@@ -23,5 +23,5 @@ Build the project using the scripts inside the `scripts/`:
 
 ## Links
 
-* CMake setup for project:
+* Tutorial for the setup of CMake:  
 [https://youtu.be/V1YP7eJHDJE?si=L24Q9-UdUEFgpXvF](https://youtu.be/V1YP7eJHDJE?si=L24Q9-UdUEFgpXvF)
