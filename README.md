@@ -14,12 +14,15 @@ Build the project using the scripts inside the `scripts/`:
 ./scripts/clear.sh
 ```
 
-## Requirements
+## Requirements and tools
 
-- cmake 3.22.1
-- make 4.3
-- gcc 11.4.0
-- c++ std=17
+|    Tool    |   Version   |
+|:----------:|:-----------:|
+| gcc        | 11.4.0      |
+| c++        | std=23      |
+| make       | 4.3         |
+| cmake      | 3.22.1      |
+| Doxygen    | 1.9.1       |
 
 ## Links
 

@@ -1,0 +1,11 @@
+{
+    "object1": {
+        "value1": 1,
+        "value2": "a"
+    },
+    "object2": {
+        "value1": 2,
+        "value2": "b",
+        "value3": [1, 2, 3]
+    }
+}

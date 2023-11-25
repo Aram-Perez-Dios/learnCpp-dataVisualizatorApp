@@ -4,12 +4,22 @@
 #include <string>
 #include <fstream>
 
-class dataReader {
-    std::string data;
+
+
+class DataReader {
+    protected:
+        std::string data;
+    
+    public:
+        virtual std::string read(const std::string& fileName) = 0;
 };
 
-class dataReaderFile: public dataReader {
 
+
+class DataReaderFile: public DataReader {
+    public:
+        std::string read(const std::string& fileName);
+        std::string getData();
 };
 
 #endif
