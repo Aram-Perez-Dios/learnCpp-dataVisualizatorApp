@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22.1)
 
-project(server VERSION 0.2.0)
+project(server VERSION 0.3.1)
 
 # C++ standard in use
 set(CMAKE_CXX_STANDARD 23)

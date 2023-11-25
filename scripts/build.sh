@@ -1,11 +1,7 @@
 #!/bin/bash
 
-if [! -d build]; then
-  mkdir build
-  echo "funchioooonaaaaaa\n\n\n"
-fi
+[ ! -d "build" ] && mkdir "build"
 
-bash scripts/clear.sh
 cd build
 cmake ..
 make

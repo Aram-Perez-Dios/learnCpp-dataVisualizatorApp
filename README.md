@@ -10,6 +10,9 @@ Build the project using the scripts inside the `scripts/`:
 # Build the project
 ./scripts/build.sh
 
+# make for compiling modified soruce files
+./scripts/make.sh
+
 # Remove all build files
 ./scripts/clear.sh
 ```
@@ -28,3 +31,6 @@ Build the project using the scripts inside the `scripts/`:
 
 * Tutorial for the setup of CMake:  
 [https://youtu.be/V1YP7eJHDJE?si=L24Q9-UdUEFgpXvF](https://youtu.be/V1YP7eJHDJE?si=L24Q9-UdUEFgpXvF)
+
+* Tutorial for creating a JSON parser in C++ from scratch:
+[https://kishoreganesh.com/post/writing-a-json-parser-in-cplusplus/](https://kishoreganesh.com/post/writing-a-json-parser-in-cplusplus/)
