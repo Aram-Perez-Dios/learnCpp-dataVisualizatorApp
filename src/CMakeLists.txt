@@ -1,2 +1,2 @@
 add_subdirectory(dataReader)
-add_subdirectory(JSONparser)
+add_subdirectory(dataObject)

@@ -4,13 +4,17 @@
 #include <iostream>
 
 #include "dataReader/dataReader.hpp"
+#include "dataObject/dataObject.hpp"
 
 int main(int argc, char *argv[]) {
-    std::unique_ptr<DataReader> dataReader(new DataReaderFile);
-    std::string fileName = argv[1];
-    std::string data = dataReader->read(fileName);
+    if(argc > 1) {
+        std::unique_ptr<DataReader> dataReader(new DataReaderFile);
+        std::string fileName = argv[1];
+        std::string data = dataReader->read(fileName);
 
-    std::cout << data << '\n';
+        CSVobject csv(data);
 
+        std::cout << csv[1][1] << '\n';
+    }
     return 0;
 }

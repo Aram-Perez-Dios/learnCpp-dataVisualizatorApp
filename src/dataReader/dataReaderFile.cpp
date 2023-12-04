@@ -5,11 +5,8 @@ std::string DataReaderFile::read(const std::string& fileName) {
     
     std::ifstream file(fileName);
     if (file.is_open()) {
-        while(!file.eof()) {
-            std::string line;
-            file >> line;
-            data += line;
-        }
+        while(!file.eof()) {data += file.get();}
+        data.pop_back();
     }
     file.close();
 
