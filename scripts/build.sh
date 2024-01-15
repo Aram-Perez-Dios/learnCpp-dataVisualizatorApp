@@ -1,8 +1,6 @@
 #!/bin/bash
 
-[ ! -d "build" ] && mkdir "build"
-
-cd build
-cmake ..
-make
-cd ..
+bash scripts/clear.sh
+bash scripts/cmake.sh
+bash scripts/make.sh
+bash scripts/doxygen.sh

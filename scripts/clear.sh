@@ -1,4 +1,3 @@
 #!/bin/bash
 
-rm -rf build/*
-rm visualizator.exe
+rm -rf *.exe build/* docs/html docs/latex
