@@ -7,13 +7,22 @@ Small application for the visualization of data generating simple graphs. All of
 Build the project using the scripts inside the `scripts/` directory (execute them on the main project's directory):
 
 ```sh
-# Build the project
+# Build the project (generate executables and documentation)
 ./scripts/build.sh
 
-# make for compiling modified soruce files
+# Create make files
 ./scripts/make.sh
 
-# Remove all build files
+# Generate all executables (main program and tests)
+./scripts/cmake.sh
+
+# Generate main executable
+./scripts/cmake.sh visualizator.exe
+
+# Generate tests executables
+./scripts/cmake.sh tests.exe
+
+# Remove all build files (executables, build/ files and doxygen documentation)
 ./scripts/clear.sh
 ```
 
@@ -22,11 +31,11 @@ Build the project using the scripts inside the `scripts/` directory (execute the
 Execute the program using the following command:
 
 ```sh
-# Build the project
+# Execution of program
 ./visualizator.exe [relativePathToFile/] 
 
-# make for compiling modified soruce files
-./visualizator.exe data/dataset1.csv 
+# Example of execution with example file
+./visualizator.exe data/test/test-dataset.csv 
 ```
 
 ## Requirements and tools
@@ -44,7 +53,7 @@ Execute the program using the following command:
 * Tutorial for the setup of CMake  
 [https://youtu.be/V1YP7eJHDJE?si=L24Q9-UdUEFgpXvF](https://youtu.be/V1YP7eJHDJE?si=L24Q9-UdUEFgpXvF)
 
-* Tutorial for creating a JSON parser in C++ from scratch  
+* Tutorial for creating a Json parser in C++ from scratch  
 [https://kishoreganesh.com/post/writing-a-json-parser-in-cplusplus](https://kishoreganesh.com/post/writing-a-json-parser-in-cplusplus)
 
 * Doxygen setup tutorial  
@@ -54,10 +63,10 @@ Execute the program using the following command:
 [https://www.doxygen.nl](https://www.doxygen.nl)
 
 * Doxygen comments tags  
-[https://www.doxygen.nl/manual/commands.html#cmdreturn](https://www.doxygen.nl/manual/commands.html#cmdreturn)
-
-* GoogleTest setup guide  
-[https://github.com/google/googletest/blob/main/googletest/README.md](https://github.com/google/googletest/blob/main/googletest/README.md)
+[https://www.doxygen.nl/manual/commands.html](https://www.doxygen.nl/manual/commands.html)
 
 * GoogleTest documentation start guide  
 [https://google.github.io/googletest/quickstart-cmake.html](https://google.github.io/googletest/quickstart-cmake.html)
+
+* GoogleTest Primer guide  
+[http://google.github.io/googletest/primer.html](http://google.github.io/googletest/primer.html)

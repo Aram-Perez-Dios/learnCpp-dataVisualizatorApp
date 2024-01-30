@@ -1,0 +1,96 @@
+\hypertarget{classCSV}{}\doxysection{CSV Class Reference}
+\label{classCSV}\index{CSV@{CSV}}
+
+
+Class to parse a string into a csv object.  
+
+
+
+
+{\ttfamily \#include $<$csv.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCSV_a1b29c3858cfcd5c8cac4822d347ec2da}{CSV}} (const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Constructor method to parse a string into a csv object. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classCSV_ac1e6cf9d5e62cf1e5e80e05f3c28e6aa}{operator\mbox{[}$\,$\mbox{]}}} (const int index)
+\begin{DoxyCompactList}\small\item\em Method to return a row. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCSV_afbae2f258f60d42e7422ce88ca879a71}{get\+Number\+Of\+Columns}} ()
+\begin{DoxyCompactList}\small\item\em Get number of columns of the csv. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCSV_a24b493f377f8b4398b3cbcaf3f1718b0}{get\+Number\+Of\+Rows}} ()
+\begin{DoxyCompactList}\small\item\em Get number of rows stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to parse a string into a csv object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCSV_a1b29c3858cfcd5c8cac4822d347ec2da}\label{classCSV_a1b29c3858cfcd5c8cac4822d347ec2da}} 
+\index{CSV@{CSV}!CSV@{CSV}}
+\index{CSV@{CSV}!CSV@{CSV}}
+\doxysubsubsection{\texorpdfstring{CSV()}{CSV()}}
+{\footnotesize\ttfamily CSV\+::\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Constructor method to parse a string into a csv object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & $<$const std\+::string\&$>$ string containing \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCSV_afbae2f258f60d42e7422ce88ca879a71}\label{classCSV_afbae2f258f60d42e7422ce88ca879a71}} 
+\index{CSV@{CSV}!getNumberOfColumns@{getNumberOfColumns}}
+\index{getNumberOfColumns@{getNumberOfColumns}!CSV@{CSV}}
+\doxysubsubsection{\texorpdfstring{getNumberOfColumns()}{getNumberOfColumns()}}
+{\footnotesize\ttfamily int CSV\+::get\+Number\+Of\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get number of columns of the csv. 
+
+\begin{DoxyReturn}{Returns}
+$<$int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSV_a24b493f377f8b4398b3cbcaf3f1718b0}\label{classCSV_a24b493f377f8b4398b3cbcaf3f1718b0}} 
+\index{CSV@{CSV}!getNumberOfRows@{getNumberOfRows}}
+\index{getNumberOfRows@{getNumberOfRows}!CSV@{CSV}}
+\doxysubsubsection{\texorpdfstring{getNumberOfRows()}{getNumberOfRows()}}
+{\footnotesize\ttfamily int CSV\+::get\+Number\+Of\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get number of rows stored. 
+
+\begin{DoxyReturn}{Returns}
+$<$int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSV_ac1e6cf9d5e62cf1e5e80e05f3c28e6aa}\label{classCSV_ac1e6cf9d5e62cf1e5e80e05f3c28e6aa}} 
+\index{CSV@{CSV}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!CSV@{CSV}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ CSV\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})}
+
+
+
+Method to return a row. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$const int$>$ index of row \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$std\+::vector$<$std\+::string$>$$>$ Row of values at index 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/d/proyectos/learn\+Cpp-\/data\+Visualizator\+App/src/data\+Parser/csv/\mbox{\hyperlink{csv_8hpp}{csv.\+hpp}}\item 
+/mnt/d/proyectos/learn\+Cpp-\/data\+Visualizator\+App/src/data\+Parser/csv/\mbox{\hyperlink{csv_8cpp}{csv.\+cpp}}\end{DoxyCompactItemize}

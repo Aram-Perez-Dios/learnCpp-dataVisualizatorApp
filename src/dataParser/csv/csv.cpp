@@ -1,5 +1,20 @@
+/**
+ * @file csv.cpp
+ * @author Aram Pérez Dios (aramperezdios@gmail.com)
+ * @brief Class to parse a string as an csv object
+ * @version 1.0
+ * @date 2023-12-08
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
 #include "csv.hpp"
 
+/**
+ * @brief Constructor method to parse a string into a csv object
+ * @param data <const std::string&> string containing
+ */
 CSV::CSV(const std::string& data):
     columnsCount(0)
 {
@@ -31,9 +46,21 @@ CSV::CSV(const std::string& data):
         dataIt++;
     }
 }
-
+/**
+ * @brief Method to return a row
+ * @param index <const int> index of row
+ * @return <std::vector<std::string>> Row of values at index
+ */
 std::vector<std::string> CSV::operator[](const int index) {return values[index];}
 
+/**
+ * @brief Get number of columns of the csv
+ * @return <int> 
+ */
 int CSV::getNumberOfColumns() {return columnsCount;}
 
+/**
+ * @brief Get number of rows stored
+ * @return <int> 
+ */
 int CSV::getNumberOfRows() {return values.size();}

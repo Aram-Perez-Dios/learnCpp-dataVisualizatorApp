@@ -3,4 +3,4 @@ add_library(file
     file.cpp
 )
 
-target_link_libraries(${EXECUTABLE_NAME} PRIVATE file)
+target_link_libraries(${EXECUTABLE_NAME} file)

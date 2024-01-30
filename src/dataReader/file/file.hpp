@@ -1,7 +1,7 @@
 /**
- * @file dataReader.hpp
+ * @file file.hpp
  * @author Aram Pérez Dios (aramperezdios@gmail.com)
- * @brief Classes to read data from different sources
+ * @brief Classes to read data from a file
  * @version 0.1
  * @date 2023-12-08
  * 
@@ -16,26 +16,41 @@
 
 /**
  * @class File
- * @pure
- * @brief Abstract class to represent an object that reads information from a soruce
+ * @brief Class to read a file
  */
 class File {
     private:
-        /** @brief attribute storing the retrieved raw data */
+        /** @brief Attribute storing the retrieved raw data */
         std::string data;
     
-    public:
+    public:        
         /**
-         * @brief Method to read a file retrieve the data inside of it
-         * @param fileName <const std::string&>   Name of the file
+         * @brief Constructor method initialize empty file object
          */
-        File(const std::string& fileName);
+        File(void);
+
+        /**
+         * @brief Constructor method to read a file and retrieve the data inside
+         * @param filePath <const std::string&> Relative path to file
+         */
+        File(const std::string& filePath);
 
         /**
          * @brief Get the Data object
-         * @return <std::string>    Data retrieved 
+         * @return <std::string> Data retrieved 
          */
         std::string getData();
+
+        /**
+         * @brief Method to read a file and retrieve the data inside
+         * @param filePath <const std::string&> Relative path to file
+         */
+        void read(const std::string& filePath);
+
+        /**
+         * @brief Method to clear the object
+         */
+        void clear();
 };
 
 #endif

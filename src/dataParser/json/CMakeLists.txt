@@ -3,4 +3,4 @@ add_library(json
     json.cpp
 )
 
-target_link_libraries(${EXECUTABLE_NAME} PRIVATE json)
+target_link_libraries(${EXECUTABLE_NAME} json)

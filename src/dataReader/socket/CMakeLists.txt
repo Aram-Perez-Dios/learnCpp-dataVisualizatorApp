@@ -3,4 +3,4 @@ add_library(socket
     socket.cpp
 )
 
-target_link_libraries(${EXECUTABLE_NAME} PRIVATE socket)
+target_link_libraries(${EXECUTABLE_NAME} socket)

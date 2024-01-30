@@ -1,0 +1,73 @@
+\label{index_md__mnt_d_proyectos_learnCpp_dataVisualizatorApp_README}%
+\Hypertarget{index_md__mnt_d_proyectos_learnCpp_dataVisualizatorApp_README}%
+ Small application for the visualization of data generating simple graphs. All of this with the objective of learning and applying multiple C++ concepts.\hypertarget{index_autotoc_md1}{}\doxysection{Build}\label{index_autotoc_md1}
+Build the project using the scripts inside the {\ttfamily scripts/} directory (execute them on the main project\textquotesingle{}s directory)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# Build the project (generate executables and documentation)}
+\DoxyCodeLine{./scripts/build.sh}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Create make files}
+\DoxyCodeLine{./scripts/make.sh}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Generate all executables (main program and tests)}
+\DoxyCodeLine{./scripts/cmake.sh}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Generate main executable}
+\DoxyCodeLine{./scripts/cmake.sh visualizator.exe}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Generate tests executables}
+\DoxyCodeLine{./scripts/cmake.sh tests.exe}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Remove all build files (executables, build/ files and doxygen documentation)}
+\DoxyCodeLine{./scripts/clear.sh}
+
+\end{DoxyCode}
+\hypertarget{index_autotoc_md2}{}\doxysection{Execution}\label{index_autotoc_md2}
+Execute the program using the following command\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# Execution of program}
+\DoxyCodeLine{./visualizator.exe [relativePathToFile/] }
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Example of execution with example file}
+\DoxyCodeLine{./visualizator.exe data/test/test-\/dataset.csv }
+
+\end{DoxyCode}
+\hypertarget{index_autotoc_md3}{}\doxysection{Requirements and tools}\label{index_autotoc_md3}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tool   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Version    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tool   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Version    }\\\cline{1-2}
+\endhead
+\PBS\centering gcc   &\PBS\centering 11.\+4.\+0    \\\cline{1-2}
+\PBS\centering c++   &\PBS\centering std=23    \\\cline{1-2}
+\PBS\centering make   &\PBS\centering 4.\+3    \\\cline{1-2}
+\PBS\centering cmake   &\PBS\centering 3.\+22.\+1    \\\cline{1-2}
+\PBS\centering Doxygen   &\PBS\centering 1.\+9.\+1   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{index_autotoc_md4}{}\doxysection{Links}\label{index_autotoc_md4}
+
+\begin{DoxyItemize}
+\item Tutorial for the setup of CMake ~\newline
+ \href{https://youtu.be/V1YP7eJHDJE?si=L24Q9-UdUEFgpXvF}{\texttt{ https\+://youtu.\+be/\+V1\+YP7e\+JHDJE?si=\+L24\+Q9-\/\+Ud\+UEFgp\+XvF}}
+\item Tutorial for creating a Json parser in C++ from scratch ~\newline
+ \href{https://kishoreganesh.com/post/writing-a-json-parser-in-cplusplus}{\texttt{ https\+://kishoreganesh.\+com/post/writing-\/a-\/json-\/parser-\/in-\/cplusplus}}
+\item Doxygen setup tutorial ~\newline
+ \href{https://www.youtube.com/watch?v=pnnKzkNTo4w}{\texttt{ https\+://www.\+youtube.\+com/watch?v=pnn\+Kzk\+NTo4w}}
+\item Doxygen documentation ~\newline
+ \href{https://www.doxygen.nl}{\texttt{ https\+://www.\+doxygen.\+nl}}
+\item Doxygen comments tags ~\newline
+ \href{https://www.doxygen.nl/manual/commands.html}{\texttt{ https\+://www.\+doxygen.\+nl/manual/commands.\+html}}
+\item Google\+Test documentation start guide ~\newline
+ \href{https://google.github.io/googletest/quickstart-cmake.html}{\texttt{ https\+://google.\+github.\+io/googletest/quickstart-\/cmake.\+html}}
+\item Google\+Test Primer guide ~\newline
+ \href{http://google.github.io/googletest/primer.html}{\texttt{ http\+://google.\+github.\+io/googletest/primer.\+html}} 
+\end{DoxyItemize}

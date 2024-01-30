@@ -18,12 +18,17 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR})
 # create tests program executable
 add_executable(${TESTS_EXECUTABLE_NAME} test.cpp)
 
-# add target to create tests program
-target_link_libraries(${TESTS_EXECUTABLE_NAME} gtest_main)
-
 # gcc compiler options
 #   -g to generate data for debugger
 #   -Wall to display hidden all warnings
-target_compile_options(${TESTS_EXECUTABLE_NAME} PRIVATE -Wall -Werror -Wextra -g -O3)
+target_compile_options(${TESTS_EXECUTABLE_NAME} PRIVATE -Wall -Werror -Wextra -g)
+
+# add target to create tests program
+target_link_libraries(${TESTS_EXECUTABLE_NAME} gtest_main)
+
+# depenendencies of project to test
+target_link_libraries(${TESTS_EXECUTABLE_NAME} file)
+#target_link_libraries(${TESTS_EXECUTABLE_NAME} csv)
+
 
 #add_test(NAME example_test COMMAND example)
