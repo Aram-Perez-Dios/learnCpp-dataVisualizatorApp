@@ -9,8 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: cmake files
-      run: ./scripts/cmake.sh
+      run: bash scripts/cmake.sh
     - name: make tests
-      run: ./scipts/make.sh tests.exe
+      run: bash scipts/make.sh tests.exe
     - name: Run Test
-      run: ./tests.exe
+      run: bash tests.exe
