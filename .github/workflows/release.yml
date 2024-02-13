@@ -13,4 +13,4 @@ jobs:
     - name: make tests
       run: bash scripts/make.sh tests.exe
     - name: Run Test
-      run: bash tests.exe
+      run: ./tests.exe
