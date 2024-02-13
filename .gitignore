@@ -1,7 +1,9 @@
+# Ignore build and debug  files 
 build/*
 .vscode/
 
-.o
-.a
-.exe
-.out
+# Ignore executable files
+*.o
+*.a
+*.exe
+*.out
