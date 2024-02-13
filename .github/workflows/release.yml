@@ -2,7 +2,6 @@ name: learncpp-datavisualizatorapp-gtests-workflow
 
 on:
   push
-  pull_request
 
 jobs:
   build:
