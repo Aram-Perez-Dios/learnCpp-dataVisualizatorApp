@@ -1,0 +1,17 @@
+name: learncpp-datavisualizatorapp-gtests-workflow
+
+on:
+  push
+  pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: cmake files
+      run: ./scripts/cmake.sh
+    - name: make tests
+      run: ./scipts/make.sh tests.exe
+    - name: Run Test
+      run: ./tests.exe
